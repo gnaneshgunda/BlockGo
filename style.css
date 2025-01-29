@@ -1,0 +1,37 @@
+
+#gamespace{
+    width:90vw;
+    margin-left:3.5vw; 
+    margin-top:2vh;
+    height:90vh;
+    border:5px solid black;
+    border-radius:20px;
+    z-index: 5;
+    /* background-image:url("https://science.nasa.gov/wp-content/uploads/2020/10/hubble-ngc2031-jpg.webp?w=2048");  */
+    /* background-image:url("https://th.bing.com/th/id/R.739f925403a073fdc68e69800ef7e866?rik=tSBywKK8p5mawA&riu=http%3a%2f%2fgetwallpapers.com%2fwallpaper%2ffull%2f1%2f5%2f2%2f129510.jpg&ehk=ik1d2U2NuIct5jkdHHvLBG9wPj8tZKKkOmtVBL2QZaU%3d&risl=&pid=ImgRaw&r=0"); */
+    background-image:url("https://tanglewood-studio.com/wp-content/uploads/2017/04/weathered-wood-wallpaper7.jpg");
+    background-size:cover;
+}
+.block{
+    height:8vh;
+    position:absolute;
+    border-radius:20px;
+}
+#basket{
+    position:absolute;
+    bottom:1.5vh;
+    height:12vh;
+    border-radius:25px;
+}
+.hearts{
+    position:relative;
+    height:5vh;
+}
+#befgame{
+    display:flex;
+    height:5vh;
+}
+#score{
+    position:relative;
+    left:75vw;
+}
