@@ -112,10 +112,10 @@ function moveBlock() {
 
     
 if (checkCollision(bad_block, basket)) {
-loseHeart(); // Lose a heart on collision
-bad_block.remove(); // Remove block upon collision
+loseHeart(); 
+bad_block.remove(); 
 } else if (position >=88) {
-bad_block.remove(); // Remove block when it goes off screen
+bad_block.remove(); 
 } else {
 requestAnimationFrame(moveBlock);
 }
@@ -140,8 +140,8 @@ function checkCollision(block, basket) {
 
 function loseHeart() {
 if (heart.length > 0) { 
-const lostHeart = heart.pop(); // Remove last heart from array
-lostHeart.remove(); // Remove heart from DOM
+const lostHeart = heart.pop(); 
+lostHeart.remove();
 if (heart.length === 0) {
 alert(`Your score is ${Score},Game Over!`); 
 location.reload(); 
@@ -156,7 +156,7 @@ function generate_blocks(timestamp) {
 const generationInterval = Math.max(1000 * (1 - (0.02 * Score)), 150); 
 
 if (timestamp - lastGenerationTime > generationInterval) { 
-lastGenerationTime = timestamp; // Update last generation time
+lastGenerationTime = timestamp; 
 if(Score<10){
   fact=4;
 } else if((Score>=10) &&(Score<30)){
